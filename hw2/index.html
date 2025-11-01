@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ДЗ по JS</title>
+  </head>
+  <style>
+    .code {
+      background: #000;
+      color: whitesmoke;
+      padding: 20px;
+      border-radius: 8px;
+      margin: 20px;
+      max-width: max-content;
+    }
+  </style>
+  <body>
+    <section>
+      <h1>
+        1. Сделать функцию, которая будет позволять вызывать себя
+        последовательно для суммирования и/или при выводе и/или математической
+        операции вернёт конечный результат func(2)(3)(5) = 10
+      </h1>
+      <div id="func" class="code"></div>
+    </section>
+    <section>
+      <h1>2. Преобразовать строку в обьект, разделяя св-ва по точке</h1>
+      <input
+        type="text"
+        id="input_str"
+        value="Привет! Меня можно звать просто Даня. Мне 21 год. I wanna work in ur company...🤓.%$@. .  . А это конец обьекта и моего тестового."
+        placeholder="Введите строку с точками"
+      />
+      <button id="btn_convert">Преобразовать</button>
+      <div id="str_to_obj" class="code"></div>
+    </section>
+
+    <!-- <script src="assets/js/sequential_sum.js"></script> -->
+    <script src="assets/js/sequential_sum.js"></script>
+    <script src="assets/js/str_to_obj.js"></script>
+  </body>
+</html>
