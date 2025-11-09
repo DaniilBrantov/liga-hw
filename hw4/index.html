@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ТуДушка Дани Брантова</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="page">
+    <div class="page__container container">
+        <header class="header">
+            <h1 class="header__title">📋 ТуДушка Дани Брантова</h1>
+        </header>
+
+        <main class="main">
+            <section class="controls">
+                <div class="controls__engine-selector engine-selector">
+                    <label class="engine-selector__label">🔧 Выберите движок запросов:</label>
+                    <select class="engine-selector__select" id="engineSelect">
+                        <option value="fetch">Fetch API</option>
+                        <option value="xhr">XMLHttpRequest</option>
+                    </select>
+                    <button class="engine-selector__button button" id="test_con">🔗 Проверить подключение</button>
+                </div>
+            </section>
+
+            <section class="forms-grid">
+                <form class="form task-form">
+                    <h3 class="form__title">➕ Добавить новую задачу</h3>
+                    <input class="form__input" type="text" id="task_name" placeholder="Название задачи" required>
+                    <textarea class="form__textarea" id="task_info" placeholder="Описание задачи"></textarea>
+                    <div class="form__checkboxes">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="task_completed"> ✅ Выполнена
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="task_important"> ⭐ Важная
+                        </label>
+                    </div>
+                    <div class="form__actions">
+                        <button class="form__button button" type="button" id="add_task">✅ Добавить задачу</button>
+                    </div>
+                </form>
+
+                <form class="form task-update-form">
+                    <h3 class="form__title">✏️ Обновить задачу</h3>
+                    <input class="form__input" type="text" id="update_task_id" placeholder="ID задачи для обновления" required>
+                    <input class="form__input" type="text" id="update_task_name" placeholder="Новое название задачи">
+                    <textarea class="form__textarea" id="update_task_info" placeholder="Новое описание задачи"></textarea>
+                    <div class="form__checkboxes">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="update_task_completed"> ✅ Выполнена
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="update_task_important"> ⭐ Важная
+                        </label>
+                    </div>
+                    <div class="form__actions">
+                        <button class="form__button button" type="button" id="update_task">🔄 Обновить задачу</button>
+                    </div>
+                </form>
+            </section>
+
+            <section class="task-actions">
+                <h3 class="task-actions__title">🎯 Другие действия</h3>
+                <div class="task-actions__group">
+                    <input class="task-actions__input" type="text" id="task_id" placeholder="ID задачи">
+                    <button class="task-actions__button button" id="get_task">👁️ Получить задачу</button>
+                    <button class="task-actions__button button button--danger" id="delete_task">🗑️ Удалить задачу</button>
+                </div>
+            </section>
+
+            <section class="results">
+                <h3 class="results__title">📊 Результаты запросов</h3>
+                <div id="output" class="results__output output"></div>
+                <div id="tasks_list" class="results__tasks tasks-list"></div>
+            </section>
+        </main>
+    </div>
+
+    <script type="module" src="assets/js/main.js"></script>
+</body>
+</html>
