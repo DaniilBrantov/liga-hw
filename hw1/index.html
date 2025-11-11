@@ -5,130 +5,246 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Company Culture</title>
     <link rel="stylesheet" href="assets/css/styles.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <section class="company-culture">
-      <div class="company-culture__container">
-        <div class="company-culture__grid">
-          <div class="company-culture__item company-culture__item--main">
-            <h2 class="company-culture__title">COMPANY CULTURE</h2>
-            <div class="company-culture__icons">
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-              <img
-                src="assets/images/instagram.svg"
-                alt="Instagram"
-                class="company-culture__icon"
-              />
-            </a>
-            <a href="tel:+1234567890">
-              <img
-                src="assets/images/phone.svg"
-                alt="Phone"
-                class="company-culture__icon"
-              />
-            </a>
-            <a href="mailto:email@example.com">
-              <img
-                src="assets/images/mail.svg"
-                alt="Mail"
-                class="company-culture__icon company-culture__icon--mail"
-              />
-            </a>
-          </div>
+    <main>
+      <section class="company-culture" aria-labelledby="company-culture-title">
+        <div class="company-culture__container">
+          <div class="company-culture__grid">
+            <div
+              class="company-culture__item company-culture__item--main"
+              role="banner"
+              aria-labelledby="company-culture-title"
+            >
+              <h1 class="company-culture__title" id="company-culture-title">
+                COMPANY CULTURE
+              </h1>
+              <div
+                class="company-culture__icons"
+                role="navigation"
+                aria-label="Социальные сети и контакты"
+              >
+                <a
+                  href="https://instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Подписаться на наш Instagram"
+                >
+                  <img
+                    src="assets/images/instagram.svg"
+                    alt="Instagram"
+                    class="company-culture__icon"
+                  />
+                </a>
+                <a
+                  href="tel:+1234567890"
+                  aria-label="Позвонить нам по номеру +1 234 567 890"
+                >
+                  <img
+                    src="assets/images/phone.svg"
+                    alt="Номер телефона"
+                    class="company-culture__icon"
+                  />
+                </a>
+                <a
+                  href="mailto:email@example.com"
+                  aria-label="Написать нам на email example.com"
+                >
+                  <img
+                    src="assets/images/mail.svg"
+                    alt="Mail"
+                    class="company-culture__icon company-culture__icon--mail"
+                  />
+                </a>
+              </div>
+            </div>
 
-          </div>
+            <div
+              class="company-culture__item company-culture__item--large"
+              role="img"
+              aria-label="Современное открытое рабочее пространство"
+            >
+              <picture>
+                <source
+                  srcset="
+                    assets/images/9_1x.webp 1x,
+                    assets/images/9_2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="assets/images/9_1x.jpg 1x, assets/images/9_2x.jpg 2x"
+                  type="image/jpeg"
+                />
+                <img
+                  src="assets/images/9_1x.jpg"
+                  alt="Просторный современный офис с collaborative рабочими зонами"
+                  class="company-culture__image"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
 
-          <div class="company-culture__item">
-            <picture>
-              <source srcset="assets/images/9_1x.webp 1x, assets/images/9_2x.webp 2x" />
-              <img
-                src="assets/images/9_1x.webp"
-                alt="Image 9"
-                class="company-culture__image"
-              />
-            </picture>
-          </div>
+            <div
+              class="company-culture__item company-culture__item--smile"
+              role="img"
+              aria-label="Счастливые сотрудники во время работы"
+            >
+              <picture>
+                <source
+                  srcset="
+                    assets/images/4_1x.webp 1x,
+                    assets/images/4_2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="assets/images/4_1x.jpg 1x, assets/images/4_2x.jpg 2x"
+                  type="image/jpeg"
+                />
+                <img
+                  src="assets/images/4_1x.jpg"
+                  alt="Улыбающиеся коллеги обсуждают проект во время встречи"
+                  class="company-culture__image"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
 
-          <div class="company-culture__item">
-            <picture>
-              <source
-                srcset="assets/images/4_1x.webp 1x, assets/images/4_2x.webp 2x"
-              />
-              <img
-                src="assets/images/4_1x.webp"
-                alt="Image 4"
-                class="company-culture__image"
-              />
-            </picture>
-          </div>
+            <div
+              class="company-culture__item company-culture__item--flower"
+              role="img"
+              aria-label="Рабочее место с элементами озеленения"
+            >
+              <picture>
+                <source
+                  srcset="
+                    assets/images/8_1x.webp 1x,
+                    assets/images/8_2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="assets/images/8_1x.jpg 1x, assets/images/8_2x.jpg 2x"
+                  type="image/jpeg"
+                />
+                <img
+                  src="assets/images/8_1x.jpg"
+                  alt="Эргономичное рабочее место с живыми растениями и натуральными материалами"
+                  class="company-culture__image"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
 
-          <div class="company-culture__item">
-            <picture>
-              <source
-                srcset="assets/images/8_1x.webp 1x, assets/images/8_2x.webp 2x"
-              />
-              <img
-                src="assets/images/8_1x.webp"
-                alt="Image 8"
-                class="company-culture__image"
-              />
-            </picture>
-          </div>
+            <div
+              class="company-culture__item company-culture__item--text"
+              role="article"
+              aria-label="Описание корпоративной культуры компании"
+            >
+              <p class="company-culture__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa
+                ultricies aliquam egestas amet mi aliquam. Eu, vel massa
+                elementum nulla.
+              </p>
+            </div>
 
-          <div class="company-culture__item company-culture__item--text">
-            <p class="company-culture__description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa
-              ultricies aliquam egestas amet mi aliquam. Eu, vel massa elementum
-              nulla.
-            </p>
-          </div>
+            <div
+              class="company-culture__item company-culture__item--coffee"
+              role="img"
+              aria-label="Зона для кофе-брейков и неформального общения"
+            >
+              <picture>
+                <source
+                  srcset="
+                    assets/images/2_1x.webp 1x,
+                    assets/images/2_2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="assets/images/2_1x.jpg 1x, assets/images/2_2x.jpg 2x"
+                  type="image/jpeg"
+                />
+                <img
+                  src="assets/images/2_1x.jpg"
+                  alt="Комфортная lounge зона с кофемашиной и диванами для отдыха"
+                  class="company-culture__image"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
 
-          <div class="company-culture__item">
-            <picture>
-              <source
-                srcset="assets/images/2_1x.webp 1x, assets/images/2_2x.webp 2x"
-              />
-              <img
-                src="assets/images/2_1x.webp"
-                alt="Image 2"
-                class="company-culture__image"
-              />
-            </picture>
-          </div>
+            <div
+              class="company-culture__item company-culture__item--beige"
+              role="region"
+              aria-label="Наши корпоративные ценности и принципы"
+            ></div>
 
+            <div
+              class="company-culture__item company-culture__item--door"
+              role="img"
+              aria-label="Доступ к современным технологиям и ресурсам"
+            >
+              <picture>
+                <source
+                  srcset="
+                    assets/images/5_1x.webp 1x,
+                    assets/images/5_2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="assets/images/5_1x.jpg 1x, assets/images/5_2x.jpg 2x"
+                  type="image/jpeg"
+                />
+                <img
+                  src="assets/images/5_1x.jpg"
+                  alt="Современное технологическое оборудование и инновационные рабочие станции"
+                  class="company-culture__image"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
 
-          <div class="company-culture__item company-culture__item--beige"></div>
+            <div
+              class="company-culture__item company-culture__item--red"
+              role="region"
+              aria-label="Инновации и стратегия развития компании"
+            ></div>
 
-                    <div class="company-culture__item">
-            <picture>
-              <source
-                srcset="assets/images/5_1x.webp 1x, assets/images/5_2x.webp 2x"
-              />
-              <img
-                src="assets/images/5_1x.webp"
-                alt="Image 5"
-                class="company-culture__image"
-              />
-            </picture>
-          </div>
-
-          <div class="company-culture__item company-culture__item--red"></div>
-          <div class="company-culture__item">
-            <picture>
-              <source
-                srcset="assets/images/7_1x.webp 1x, assets/images/7_2x.webp 2x"
-              />
-              <img
-                src="assets/images/7_1x.webp"
-                alt="Image 7"
-                class="company-culture__image"
-              />
-            </picture>
+            <div
+              class="company-culture__item company-culture__item--silence"
+              role="img"
+              aria-label="Зоны для сосредоточенной работы"
+            >
+              <picture>
+                <source
+                  srcset="
+                    assets/images/7_1x.webp 1x,
+                    assets/images/7_2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="assets/images/7_1x.jpg 1x, assets/images/7_2x.jpg 2x"
+                  type="image/jpeg"
+                />
+                <img
+                  src="assets/images/7_1x.jpg"
+                  alt="Тихая индивидуальная рабочая зона с фокусом на концентрацию"
+                  class="company-culture__image"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
   </body>
 </html>
