@@ -1,0 +1,54 @@
+.controls {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: var(--space);
+  border-radius: var(--radius);
+  margin-bottom: var(--space);
+  margin-top: var(--space);
+}
+
+.controls__buttons {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.button {
+  padding: 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  font-size: var(--text-sm);
+  background: var(--surface-light);
+  color: var(--text);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.button:hover {
+  background: var(--border);
+}
+
+.output {
+  background: var(--surface-light);
+  border: 1px solid var(--border);
+  padding: var(--space);
+  min-height: 100px;
+  max-height: 200px;
+  overflow-y: auto;
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  white-space: pre-wrap;
+  color: var(--text-light);
+  border-radius: var(--radius);
+}
+
+.tasks {
+  margin-top: var(--space);
+}
+
+.tasks__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space);
+}
+
